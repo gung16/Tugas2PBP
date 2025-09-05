@@ -9,6 +9,7 @@ class Product(models.Model):
     is_featured = models.BooleanField(default=False)
     stock = models.IntegerField(default=0)
     rating = models.FloatField(default=0.0)
+    size = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return self.name
